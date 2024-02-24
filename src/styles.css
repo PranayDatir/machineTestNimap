@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+.custom-dialog-container {
+    /* background-color: blueviolet; */
+    transform: translate(0, -40%);
+    /* width: 70%; */
+  }
+  

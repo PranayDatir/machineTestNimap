@@ -1,0 +1,20 @@
+<!-- <p>profile works!</p>
+<button routerLink="/register">click</button> -->
+<!-- <img [src]="u.profileImage64"> -->
+<!-- <ul>
+    <li *ngFor="let user of users">
+        {{user.fname}}
+
+    </li>
+</ul> -->
+
+<table>
+    <tr>
+        <th>NAMES</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.fname}}</td>
+        <td><a href="">edit</a></td>
+    </tr>
+</table>

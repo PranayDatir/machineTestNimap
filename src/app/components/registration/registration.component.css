@@ -1,0 +1,89 @@
+.container {
+    height: 550px;
+    padding: 0px;
+    background-color: rgb(135, 135, 195);
+}
+
+.headr {
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.photo-section {
+    /* background-color: rgb(181, 219, 233); */
+    width: 30%;
+    height: 499px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-section {
+    width: 70%;
+    height: 499px;
+    /* background-color: rgb(34, 90, 110); */
+}
+
+.card {
+    height: 40%;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+}
+img{
+    background-color: blueviolet;
+    width: 215px;
+    height: inherit;
+}
+.regBtn {
+    /* border-style: none; */
+    background-color: rgb(74, 86, 139);
+    /* flex: auto; */
+    width: 50px;
+}
+
+.inputForm {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inpFirstName {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.inpSecondName {
+    width: 60%;
+}
+
+.rangeInp {
+    width: 80%;
+}
+
+.rangeLabel {
+    width: 20%;
+    color: antiquewhite;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inpPadding {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+}
+.textReg{
+    flex: auto;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+}
+.imgDiv{
+    height: 200px;
+    width: 100px;
+    position: fixed;
+}

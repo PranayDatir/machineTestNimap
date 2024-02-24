@@ -1,0 +1,56 @@
+<div class="container">
+    <header class="d-flex bg-light">
+        <div class="textReg">Register </div>
+        <button class="regBtn" (click)="closeRegisterForm()">&#11097;</button>
+    </header>
+    <form class="d-flex" [formGroup]="userRegister" (ngSubmit)="onSubmit()">
+        <div class="photo-section d-flex">
+            <div class="card d-flex">
+                <div *ngIf="selectedImage" class="imgDiv">
+                    <img [src]="imageBase64" accept="image/.jpg" alt="Selected Image" width="500px" height="500px">
+                </div>
+                <div>
+                    <a (click)="selectImage()" style="color: tomato;">Click Here to Select Image</a>
+                    <input type="file" #fileInput style="display: none" required (change)="onFileSelected($event)">
+                </div>
+            </div>
+        </div>
+        <div class="info-section">
+            <div class="mt-3">
+                <div class="col d-flex inpPadding">
+                    <input type="text" class="form-control inpFirstName" required placeholder="First Name" formControlName="fname">
+                    <!-- <div *ngIf="userRegister.controls.fname.hasError('alphabeticWithMaxLength')"
+                    class="text-danger">Only alphabetic characters are allowed, and the length should not exceed 20 characters</div> -->
+                    <input type="text" class="form-control inpSecondName" required placeholder="Last Name"
+                        formControlName="lastname">
+                </div>
+            </div>
+            <div class="col inpPadding">
+                <input type="email" class="form-control" required placeholder="Email" formControlName="email">
+            </div>
+            <div class="col inpPadding ">
+                <input type="text" class="form-control" required placeholder="(541) 754-3010" formControlName="contact">
+            </div>
+            <div class="col inpPadding ">
+                <label for="age" class="rangeLabel">Age: </label>
+                <input class="rangeInp" type="range" id="age" required min="20" max="60" value="0" formControlName="age">
+            </div>
+            <div class="col inpPadding">
+                <input type="text" class="form-control" placeholder="State" required formControlName="state">
+            </div>
+            <div class="col inpPadding">
+                <input type="text" class="form-control" required placeholder="Country" formControlName="country">
+            </div>
+            <div class="col inpPadding">
+                <input type="text" class="form-control" required placeholder="Address" formControlName="Address">
+            </div>
+            <div class="col inpPadding">
+                <input type="text" class="form-control" required placeholder="tags" formControlName="tags">
+            </div>
+            <div class="col inpPadding d-flex justify-content-center">
+                <button class="btn btn-primary" type="reset" style="margin-right: 40px;" routerLink="/home">Cancel</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

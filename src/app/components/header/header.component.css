@@ -1,0 +1,11 @@
+.container-fluid{
+    margin-top: 55px;
+    margin-right:115px ;
+}
+.nav-link{
+    margin-right: 30px;
+}
+a:hover{
+    /* font-size: 200px; */
+    border-top: 2px solid rgb(21, 71, 71);
+}
